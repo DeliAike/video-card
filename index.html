@@ -1,26 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>独家视频：你不容错过的精彩内容</title>
+  <meta charset="UTF-8" />
+  <title>独家视频发布！</title>
 
   <!-- Twitter Card Meta -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="独家视频发布！">
   <meta name="twitter:description" content="点击立即观看完整视频，精彩不容错过！">
-  <meta name="twitter:image" content="https://i.miji.bid/2025/03/24/2ee07773ad39d252a1f5f14fbc7c637c.jpeg">
-  <meta name="twitter:url" content="https://t.me/jisou99001">
+  <meta name="twitter:image" content="https://i.imgur.com/QkDp3ZL.png">
+  <meta name="twitter:url" content="https://你的用户名.github.io/video-card/">
 
-  <!-- Open Graph (FB 用的） -->
+  <!-- Open Graph -->
   <meta property="og:title" content="独家视频发布！" />
   <meta property="og:description" content="点击立即观看完整视频，精彩不容错过！" />
-  <meta property="og:image" content="https://i.miji.bid/2025/03/24/2ee07773ad39d252a1f5f14fbc7c637c.jpeg" />
-  <meta property="og:url" content="https://t.me/jisou99001" />
+  <meta property="og:image" content="https://i.imgur.com/QkDp3ZL.png" />
+  <meta property="og:url" content="https://你的用户名.github.io/video-card/" />
   <meta property="og:type" content="website" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #f9f9f9;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      background: #000;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+    .content {
+      max-width: 960px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #0077ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  <script>
-    window.location.href = "https://t.me/jisou99001";
-  </script>
+
+  <!-- 视频区域 -->
+  <div class="video-container">
+    <video controls autoplay>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      您的浏览器不支持 HTML5 视频。
+    </video>
+  </div>
+
+  <!-- 内容区域 -->
+  <div class="content">
+    <h2>欢迎来到我们的网站</h2>
+    <p>这里可以是你的广告文案、产品介绍、注册链接、二维码、或者跳转按钮。</p>
+    <a class="btn" href="https://t.me/jisou99001" target="_blank">立即加入 Telegram</a>
+  </div>
+
 </body>
 </html>
