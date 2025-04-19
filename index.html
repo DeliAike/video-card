@@ -2,58 +2,95 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>独家视频发布！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>精彩视频页面</title>
 
-  <!-- Twitter Card Meta -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="独家视频发布！">
   <meta name="twitter:description" content="点击立即观看完整视频，精彩不容错过！">
   <meta name="twitter:image" content="https://i.imgur.com/QkDp3ZL.png">
-  <meta name="twitter:url" content="https://你的用户名.github.io/video-card/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="独家视频发布！" />
-  <meta property="og:description" content="点击立即观看完整视频，精彩不容错过！" />
-  <meta property="og:image" content="https://i.imgur.com/QkDp3ZL.png" />
-  <meta property="og:url" content="https://你的用户名.github.io/video-card/" />
-  <meta property="og:type" content="website" />
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-      background: #f9f9f9;
+      background: #f2f2f2;
+      color: #222;
     }
+
     .video-container {
-      position: relative;
       width: 100%;
-      max-width: 960px;
-      margin: 0 auto;
-      background: #000;
+      background-color: #000;
     }
+
     video {
       width: 100%;
       height: auto;
+      display: block;
     }
+
     .content {
       max-width: 960px;
-      margin: 20px auto;
-      background: #fff;
+      margin: 0 auto;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
+
     .content h2 {
+      font-size: 1.5rem;
       margin-top: 0;
     }
+
+    .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
+      margin-top: 16px;
+      padding: 12px 24px;
+      font-size: 1rem;
       background: #0077ff;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #005ecc;
+    }
+
+    /* 小屏适配 */
+    @media (max-width: 600px) {
+      .content {
+        padding: 16px;
+        border-radius: 0;
+      }
+
+      .content h2 {
+        font-size: 1.2rem;
+      }
+
+      .content p {
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 1.05rem;
+      }
     }
   </style>
 </head>
@@ -62,19 +99,16 @@
   <!-- 视频区域 -->
   <div class="video-container">
     <video controls playsinline poster="https://i.imgur.com/QkDp3ZL.png">
-      <source src="video.mp4" type="video/mp4">
-      您的浏览器不支持视频播放
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      您的浏览器不支持 HTML5 视频。
     </video>
-    <p style="color: red; font-weight: bold;">
-      ⚠️ 若视频无法播放，请点击右上角“用浏览器打开”
-    </p>
   </div>
 
   <!-- 内容区域 -->
   <div class="content">
-  <h2>欢迎来到我们的视频页面</h2>
-  <p>这是我们最新的独家内容，请点击下方按钮加入 Telegram 获取更多。</p>
-  <a class="btn" href="https://t.me/jisou99001" target="_blank">👉 点击进入 Telegram</a>
+    <h2>欢迎来到我们的内容平台</h2>
+    <p>如果你喜欢这个视频，欢迎点击下方按钮加入 Telegram 获取更多资源。若视频无法播放，请尝试点击右上角“在浏览器中打开”。</p>
+    <a class="btn" href="https://t.me/jisou99001" target="_blank">👉 点击加入 Telegram</a>
   </div>
 
 </body>
